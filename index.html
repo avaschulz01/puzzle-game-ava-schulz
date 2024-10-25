@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Scrambled Puzzle Game</h1>
+    <h3>To play, simply click on the "cell" blocks in the table
+	to arrange the scrambled numbers in sequential order.</h3>
+	<h3>Achieve the best play against your rivals with as much less moves as possible! in the shortest
+	period of time!</h3>
+	    <div class="controls">
+        <p>Number of moves thus far: <span id="move-count">0</span></p>
+        <p>Time spent on current game: <span id="time-count">0</span> seconds</p>
+		<button onclick="newGame()">New Game</button>
+        <button onclick="simpleGame()">Simple Game</button>
+    </div>
+
+    <table id="puzzle-board"></table>
+
+    <script src="script.js"></script>
+</body>
+</html>
